@@ -6,12 +6,12 @@ const Intro = () => {
   return (
     <div
       style={{ backgroundImage: `url(${Header})` }}
-      className="intro h-full w-screen md:pt-[7rem] md:pb-[3rem] md:px-[0.5rem] px-[1rem] pt-[6rem] pb-[3rem] flex flex-col md:flex-row items-center justify-center bg-[{Header}] bg-cover bg-center"
+      className="intro h-full w-screen md:pt-[7rem] md:pb-[3rem] md:px-[0.5rem] px-[1rem] pt-[6rem] pb-[3rem] flex flex-col md:flex-row items-center justify-center bg-[{Header}] bg-cover bg-center relative"
     >
-      <div className="intro-bg absolute top-0 left-0 w-full h-full bg-black opacity-50 z-0"></div>
+      <div className="intro-overlay absolute top-0 left-0 w-full h-full bg-black opacity-50 z-0"></div>
       <div className="intro-left w-full flex items-center w-1/2 md:flex-1 md:shrink ">
-        <div className="intro-left-wrapper p-[2rem] bg-white bg-opacity-50 rounded-lg shadow-lg">
-          <h2 class="intro-left-name text-xl font-bold text-[#c4bc21]">
+        <div className="intro-left-wrapper p-[2rem] md:ml-[1rem] bg-white bg-opacity-50 rounded-lg shadow-lg z-10">
+          <h2 className="intro-left-name text-xl font-bold text-[#c4bc21]">
             PAUL ONYEBUCHI
           </h2>
           <h2 className="intro-left-title">
@@ -27,7 +27,7 @@ const Intro = () => {
         <div className="intro-right-wrapper w-full p-[2rem]">
           <img
             src={Me}
-            alt=""
+            alt="My photo"
             className="intro-right-img mask-contain rounded-full relative z-10 md:mask-contain"
           />
         </div>
