@@ -1,4 +1,5 @@
 import React from "react";
+import SectionLine from "./section-line";
 import Header from "../../src/img/header.png";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -10,7 +11,7 @@ const About = () => {
       <h2 className="about-title text-2xl font-bold text-[#c4bc21]">
         About Me
       </h2>
-      <div className="section-line h-1 w-1/5 bg-[#c4bc21] mb-[1rem]"></div>
+      <SectionLine />
       <div className="about-wrapper h-full w-full md:flex md:items-center md:justify-between flex-col md:flex-row">
         <div className="about-left w-full md:w-2/3">
           <p className="text-base/7 mb-[1rem]">
