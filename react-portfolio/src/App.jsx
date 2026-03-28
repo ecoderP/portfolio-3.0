@@ -1,23 +1,25 @@
 import React from "react";
-import Navbar from "./components/navbar";
-import Intro from "./components/intro";
-import About from "./components/about";
-import Skills from "./components/skills";
-/**
-import About from "./components/about";
-import Projects from "./components/projects";
-import Contact from "./components/contact";
+import Header from "./components/header";
+import Intro from "./components/sections/intro";
+import About from "./components/sections/about";
+import Projects from "./components/sections/projects";
+import Skills from "./components/sections/skills";
+import Articles from "./components/sections/articles";
 import Footer from "./components/footer";
-import ProjectsPage from "./components/projects_page";
-import { BrowserRouter, Routes, Route, RouterProvider } from "react-router";
-**/
+//import { BrowserRouter, Routes, Route, RouterProvider } from "react-router";
 
 export default function App() {
   return (
-    <>
-      <Intro />
-      <About />
-      <Skills />
-    </>
+    <div className="App">
+      <Header />
+      <main>
+        <Intro />
+        <About />
+        <Skills />
+        <Projects />
+        <Articles />
+      </main>
+      <Footer />
+    </div>
   );
 }

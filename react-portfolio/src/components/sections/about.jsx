@@ -1,20 +1,21 @@
 import React from "react";
-import SectionLine from "./section-line";
-import Header from "../../src/img/header.png";
+import SectionBlock from "./section-block";
+import SectionLine from "../atoms/section-line";
+import Header from "../../../src/img/header.png";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div className="about h-full w-screen my-[5rem] px-[2rem]">
+    <SectionBlock id="about">
       <h2 className="about-title text-2xl font-bold text-[#c4bc21]">
         About Me
       </h2>
       <SectionLine />
       <div className="about-wrapper h-full w-full md:flex md:items-center md:justify-between flex-col md:flex-row">
         <div className="about-left w-full md:w-2/3">
-          <p className="text-base/7 mb-[1rem]">
+          <p className="">
             I'm an AWS Certified Solutions Architect and I build cloud-native
             web applications using AWS services such as Lambda, API Gateway,
             DynamoDB, and S3. I combine these technologies with frontend
@@ -24,7 +25,7 @@ const About = () => {
             meet user needs and drive business success. I also want to continue
             learning and growing while I do that.
           </p>
-          <p className="text-base/7 mb-[1rem]">
+          <p className=" ">
             When I'm not working, I like to take walks along the trail and just
             be out in nature. I also enjoy watching movies. I am a big fan of
             science fiction and fantasy genres, and I love exploring new worlds
@@ -58,7 +59,7 @@ const About = () => {
           {" "}
         </div>
       </div>
-    </div>
+    </SectionBlock>
   );
 };
 
