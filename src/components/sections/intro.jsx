@@ -19,7 +19,9 @@ const Intro = () => {
             <h2 className="intro-left-name text-xl font-bold text-[#292E49] text-shadow-lg/10 mb-2">
               PAUL ONYEBUCHI
             </h2>
-            <h2 className="intro-left-title">Frontend | Cloud Developer</h2>
+            <h2 className="intro-left-title text-2xl md:text-3xl">
+              Frontend | Cloud Developer
+            </h2>
             <p className="intro-left-desc">
               Aspiring Cloud Developer building and deploying cloud-native web
               apps on AWS.

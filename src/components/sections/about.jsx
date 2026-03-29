@@ -16,8 +16,8 @@ const About = () => {
       <div className="about-wrapper h-full w-full md:flex md:items-center md:justify-between flex-col md:flex-row">
         <div className="about-left w-full md:w-2/3">
           <p className="">
-            I'm an AWS Certified Solutions Architect and I build cloud-native
-            web applications using AWS services such as Lambda, API Gateway,
+            I'm an AWS Certified Cloud Professional and I build cloud-native web
+            applications using AWS services such as Lambda, API Gateway,
             DynamoDB, and S3. I combine these technologies with frontend
             frameworks like React JS to build scalable solutions. I am
             passionate about leveraging cloud technologies to create efficient
@@ -26,15 +26,20 @@ const About = () => {
             learning and growing while I do that.
           </p>
           <p className=" ">
-            When I'm not working, I like to take walks along the trail and just
-            be out in nature. I also enjoy watching movies. I am a big fan of
-            science fiction and fantasy genres, and I love exploring new worlds
-            and stories through these mediums.
+            When I'm not working, I like to take long walks on the trail and
+            just be out in nature. I'm also a big fan of science fiction and
+            fantasy movies. I love exploring new worlds and stories through
+            these mediums.
+          </p>
+          <p className=" ">
+            I'm actively looking for new opportunities to learn and grow, so if
+            you have any questions or just want to connect, feel free to find me
+            on social media or reach out!
           </p>
           <div className="about-socials mt-[1rem] border-s-4 text-2xl">
             <h4 className="mx-[1rem] my-[1rem] text-shadow-lg-50 text-[#292E49]">
               {" "}
-              Follow Me:
+              Let's Connect:
             </h4>
             <a
               href="https://x.com/paulemi?s=21"
