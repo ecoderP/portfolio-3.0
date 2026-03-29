@@ -7,9 +7,9 @@ import SkillsBlock from "./skills-block";
 const SkillsSection = () => {
   return (
     <SectionBlock>
-      <h2 className="skills-title text-2xl font-bold text-[#c4bc21]">Skills</h2>
+      <h2 className="skills-title text-2xl font-bold text-[#292E49]">Skills</h2>
       <SectionLine />
-      <div className="skills-wrapper h-full w-full md:grid md:grid-cols-3 md:grid-flow-rows gap-[1rem]">
+      <div className="skills-wrapper h-full w-full pt-[1rem] md:grid md:grid-cols-3 md:grid-flow-rows gap-[1rem]">
         {Skills.map((item) => (
           <SkillsBlock
             style={{

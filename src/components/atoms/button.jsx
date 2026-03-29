@@ -1,13 +1,13 @@
 import React from "react";
 
-const LinkButton = ({ children, url, style, target }) => {
+const LinkButton = ({ children, url, style, target, className }) => {
   return (
     <a
       href={url}
       target={target}
       rel="noopener noreferrer"
       style={style}
-      className=" text-white py-2"
+      className={className}
     >
       {children}
     </a>

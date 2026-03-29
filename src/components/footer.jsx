@@ -9,16 +9,22 @@ const Footer = () => {
       className="w-full text-center py-4 bg-[#1a2630] text-[#f0f0f0]"
     >
       <nav className="mb-2">
-        <a href="#intro" className="mx-2 hover:underline">
-          Home
-        </a>
-        <a href="#about" className="mx-2 hover:underline">
+        <a
+          href="#about"
+          className="mx-2 hover:underline px-[0.6rem] py-[0.25rem]"
+        >
           About
         </a>
-        <a href="#projects" className="mx-2 hover:underline">
+        <a
+          href="#projects"
+          className="mx-2 hover:underline px-[0.6rem] py-[0.25rem]"
+        >
           Projects
         </a>
-        <a href="#articles" className="mx-2 hover:underline">
+        <a
+          href="#articles"
+          className="mx-2 hover:underline px-[0.6rem] py-[0.25rem]"
+        >
           Articles
         </a>
       </nav>

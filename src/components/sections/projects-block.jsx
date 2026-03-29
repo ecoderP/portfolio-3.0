@@ -24,6 +24,7 @@ const ProjectsBlock = ({
           <p>{description}</p>
           <p>Technologies: {technologies.join(", ")}</p>
           <LinkButton
+            className="text-white py-2"
             url={link}
             target="_blank"
             style={{
@@ -32,7 +33,7 @@ const ProjectsBlock = ({
               "text-decoration": "underline",
             }}
           >
-            <FiChevronsRight className="inline" />
+            <FiChevronsRight className="inline " />
             See Documentation
           </LinkButton>
         </div>

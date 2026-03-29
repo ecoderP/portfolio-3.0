@@ -3,7 +3,7 @@ import LinkButton from "../atoms/button";
 
 const Navbar = () => {
   return (
-    <nav className="nav_links mr-[10rem] top-5 text-lg font-bold hidden md:flex gap-10 justify-center items-center z-70">
+    <nav className="nav_links mdmr-[3rem] top-5 text-lg font-bold hidden md:flex gap-10 justify-center items-center z-70">
       <a href="#about">About Me</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
@@ -12,10 +12,10 @@ const Navbar = () => {
       </a>
       <div>
         <LinkButton
-          url="#projects"
+          url="#about"
           style={{
             color: "#f0f0f0",
-            backgroundColor: "red",
+            backgroundColor: "#FF4500",
             padding: "0.5rem 1rem",
             zIndex: 70,
             marginLeft: "5rem",

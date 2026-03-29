@@ -15,7 +15,7 @@ const Projects = () => {
       }}
     >
       <div>
-        <h2 className="projects-title text-2xl font-bold text-[#f0f0f0] mb-[1rem]">
+        <h2 className="projects-title text-2xl font-bold text-[#f0f0f0] mb-[0.5rem]">
           Projects
         </h2>
         <SectionLine style={{ backgroundColor: "#f0f0f0" }} />
