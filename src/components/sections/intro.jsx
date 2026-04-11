@@ -17,7 +17,7 @@ const Intro = () => {
         <div className="intro-left w-full flex items-center w-1/2 md:flex-1 md:shrink mt-[1rem] md:mt-[3rem]">
           <div className="intro-left-wrapper p-[2rem] md:ml-[1rem] bg-white bg-opacity-50 rounded-lg shadow-lg z-10">
             <h2 className="intro-left-name text-xl font-bold text-[#292E49] text-shadow-lg/10 mb-2">
-              PAUL Emeka ONYEBUCHI
+              PAUL ONYEBUCHI
             </h2>
             <h2 className="intro-left-title text-2xl md:text-3xl">
               Frontend | Cloud Developer
