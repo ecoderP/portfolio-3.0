@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../../../src/img/header.png";
-import Me from "../../../src/img/me.png";
+import Me from "../../../src/img/me.webp";
 import Wave from "../../../src/img/wave.svg?react";
 
 const Intro = () => {
@@ -32,8 +32,9 @@ const Intro = () => {
           <div className="intro-right-wrapper w-full p-[2rem]">
             <img
               src={Me}
+              loading="lazy"
               alt="My photo"
-              className="intro-right-img mask-contain rounded-full relative  md:mask-contain"
+              className="intro-right-img mask-contain rounded-full relative  md:mask-contain w-full h-full object-cover"
             />
           </div>
         </div>

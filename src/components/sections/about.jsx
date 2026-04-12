@@ -37,10 +37,10 @@ const About = () => {
             on social media or reach out!
           </p>
           <div className="about-socials mt-[1rem] border-s-4 text-2xl">
-            <h4 className="mx-[1rem] my-[1rem] text-shadow-lg-50 text-[#292E49]">
+            <p className="mx-[1rem] text-2xl my-[1rem] text-shadow-lg-50 text-[#292E49]">
               {" "}
               Let's Connect:
-            </h4>
+            </p>
             <a
               href="https://x.com/paulemi?s=21"
               className="inline-block mx-[1rem] px-[0.5rem] py-[0.25rem] bg-[#292E49] text-white rounded-full"
