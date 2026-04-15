@@ -19,6 +19,8 @@ const Navbar = () => {
             padding: "0.5rem 1rem",
             zIndex: 70,
             marginLeft: "5rem",
+            border: "1px solid #FF4500",
+            borderRadius: "4px",
           }}
         >
           Hire Me

@@ -22,7 +22,12 @@ const MobileNav = ({ style, closeNav }) => {
         <li onClick={closeNav}>
           <LinkButton
             href="#contact"
-            style={{ backgroundColor: "#FF4500", padding: "0.5rem 1rem" }}
+            style={{
+              backgroundColor: "#FF4500",
+              padding: "0.5rem 1rem",
+              border: "1px solid #FF4500",
+              borderRadius: "4px",
+            }}
           >
             Hire Me
           </LinkButton>
