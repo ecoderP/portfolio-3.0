@@ -18,7 +18,13 @@ const ProjectsBlock = ({
       <h3 className="bg-[#1a2630] p-[2rem]">{title}</h3>
       <div className="p-[1rem] flex flex-col gap-[1rem] md:flex-row">
         <div>
-          <img src={img} alt={title} />
+          <img
+            src={img}
+            alt={title}
+            width="100%"
+            height="100%"
+            loading="lazy"
+          />
         </div>
         <div>
           <p>{description}</p>

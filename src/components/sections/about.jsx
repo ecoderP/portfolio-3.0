@@ -16,25 +16,34 @@ const About = () => {
       <div className="about-wrapper h-full w-full md:flex md:items-center md:justify-between flex-col md:flex-row">
         <div className="about-left w-full md:w-2/3">
           <p className="">
-            I'm an AWS Certified Cloud Professional and I build cloud-native web
-            applications using AWS services such as Lambda, API Gateway,
-            DynamoDB, and S3. I combine these technologies with frontend
-            frameworks like React JS to build scalable solutions. I am
-            passionate about leveraging cloud technologies to create efficient
-            and innovative solutions that deliver high-quality applications that
-            meet user needs and drive business success. I also want to continue
-            learning and growing while I do that.
+            I’m an AWS Certified Cloud Practitioner focused on building
+            cloud-native web applications using services like AWS Lambda, API
+            Gateway, DynamoDB, and S3. I develop full-stack solutions by
+            combining these services with modern frontend frameworks such as
+            React, with an emphasis on scalability, performance, and
+            maintainability.
           </p>
           <p className=" ">
-            When I'm not working, I like to take long walks on the trail and
-            just be out in nature. I'm also a big fan of science fiction and
-            fantasy movies. I love exploring new worlds and stories through
-            these mediums.
+            I’ve worked on projects that involve deploying applications to AWS,
+            setting up CI/CD pipelines, and optimizing delivery using services
+            like CloudFront. My approach is centered on building systems that
+            are not only functional but also efficient and reliable in
+            real-world use.
           </p>
           <p className=" ">
-            I'm actively looking for new opportunities to learn and grow, so if
-            you have any questions or just want to connect, feel free to find me
-            on social media or reach out!
+            I’m continuously developing my skills in cloud architecture and
+            software engineering, with a focus on designing and deploying
+            production-ready applications.
+          </p>
+          <p className=" ">
+            Outside of tech, I enjoy spending time outdoors and exploring
+            science fiction and fantasy—interests that keep me curious and
+            constantly thinking about new ideas and possibilities.
+          </p>
+          <p className=" ">
+            I’m currently open to opportunities where I can contribute to
+            cloud-based systems and continue growing as a developer. Feel free
+            to reach out or connect with me.
           </p>
           <div className="about-socials mt-[1rem] border-s-4 text-2xl">
             <p className="mx-[1rem] text-2xl my-[1rem] text-shadow-lg-50 text-[#292E49]">
