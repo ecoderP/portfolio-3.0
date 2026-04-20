@@ -1,4 +1,4 @@
-name: Deploy Portfolio site to GitHub Pages
+name: Deploy Portfolio site to GitHub Pages and S3
 
 on:
   push:
@@ -26,6 +26,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+#------- BUILD FOR GITHUB PAGES --------#
       - name: Build
         run: npm run build
 
@@ -46,3 +47,17 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+#---------- BUILD FOR S3 --------------#
+      - name: Build for S3
+        run: npm run build -- --mode production
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::445100240690:role/GithubAction-AssumeRoleWithAction
+          role-session-name: GitHub_to_AWS_via_FederatedOIDC
+          aws-region: us-east-1
+
+      - name: Deploy to S3
+        run: aws s3 sync dist/ s3://${{ secrets.S3_BUCKET }} --delete
