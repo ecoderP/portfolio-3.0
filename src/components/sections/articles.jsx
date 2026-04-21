@@ -8,7 +8,7 @@ const Articles = () => {
     <SectionBlock id="articles">
       <h2>Articles</h2>
       <SectionLine />
-        <ArticleBlocks>
+        <ArticleBlocks />
     </SectionBlock>
   );
 };
