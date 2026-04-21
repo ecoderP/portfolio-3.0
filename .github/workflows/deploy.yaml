@@ -66,25 +66,25 @@ jobs:
         uses: actions/deploy-pages@v4
 
 #---------- BUILD FOR S3 --------------#
-    deploy-s3:
-      needs: build
-      runs-on: ubuntu-latest
+  deploy-s3:
+    needs: build
+    runs-on: ubuntu-latest
 
-      steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: dist-artifact
-          path: dist/
+    steps:
+    - name: Download artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: dist-artifact
+        path: dist/
 
-      #----- OIDC AUTH FOR S3 -------#
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          role-to-assume: arn:aws:iam::445100240690:role/GithubAction-AssumeRoleWithAction
-          role-session-name: GitHub_to_AWS_via_FederatedOIDC
-          aws-region: us-east-1
+    #----- OIDC AUTH FOR S3 -------#
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        role-to-assume: arn:aws:iam::445100240690:role/GithubAction-AssumeRoleWithAction
+        role-session-name: GitHub_to_AWS_via_FederatedOIDC
+        aws-region: us-east-1
 
-      - name: Deploy to S3
-        run: |
-          aws s3 sync dist/ s3://${{ secrets.S3_BUCKET }} --delete
+    - name: Deploy to S3
+      run: |
+        aws s3 sync dist/ s3://${{ secrets.S3_BUCKET }} --delete
