@@ -14,6 +14,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    outputs:
+      artifact-name: dist-artifact
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -21,21 +24,24 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 20
+          cache: npm
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-#------- BUILD FOR GITHUB PAGES --------#
-      - name: Build
+      - name: Build (single build for all targets)
         run: npm run build
 
+#------- UPLOAD ARTIFACT TO BE USED FOR BOTH DEPLOY JOBS --------#
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          name: dist-artifact
+          path: dist/
 
-  deploy:
+#-------- DEPLOY TO GITHUB PAGES----------------------------#
+  deploy-pages:
     needs: build
     runs-on: ubuntu-latest
 
@@ -44,14 +50,34 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: dist-artifact
+          path: dist/
+
+      - name: Upload artifact for GitHub pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
 
 #---------- BUILD FOR S3 --------------#
-      - name: Build for S3
-        run: npm run build -- --mode production
+    deploy-s3:
+      needs: build
+      runs-on: ubuntu-latest
 
+      steps:
+      - name: Downoad artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: dist-artifact
+          path: dist/
+
+      #----- OIDC AUTH FOR S3 -------#
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
@@ -60,4 +86,5 @@ jobs:
           aws-region: us-east-1
 
       - name: Deploy to S3
-        run: aws s3 sync dist/ s3://${{ secrets.S3_BUCKET }} --delete
+        run: |
+          aws s3 sync dist/ s3://${{ secrets.S3_BUCKET }} --delete
