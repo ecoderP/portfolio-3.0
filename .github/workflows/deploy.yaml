@@ -88,3 +88,14 @@ jobs:
     - name: Deploy to S3
       run: |
         aws s3 sync dist/ s3://${{ secrets.S3_BUCKET }} --delete
+
+    - name: Debug bucket name
+      run: echo "Bucket is: ${{ secrets.S3_BUCKET }}"
+
+  #------------ Invalidate CloudFront Cache at Edge Locations ------------#
+    - name: Invalidate CloudFront cache
+      if: ${{ secrets.CLOUDFRONT_DIST_ID != '' }}
+      run: |
+        aws cloudfront create-invalidation \
+          --distribution-id ${{ secrets.CLOUDFRONT_DIST_ID }} \
+          --paths "/*"
