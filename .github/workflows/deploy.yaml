@@ -93,31 +93,31 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Download artifact
-      uses: actions/download-artifact@v4
-      with:
-        name: dist-artifact
-        path: dist/
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: dist-artifact
+          path: dist/
 
-    #----- OIDC AUTH FOR S3 -------#
-    - name: Configure AWS credentials
-      uses: aws-actions/configure-aws-credentials@v4
-      with:
-        role-to-assume: arn:aws:iam::445100240690:role/GitHubAction-AssumeRoleWithAction
-        role-session-name: GitHub_to_AWS_via_FederatedOIDC
-        aws-region: us-east-1
+      #----- OIDC AUTH FOR S3 -------#
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::445100240690:role/GitHubAction-AssumeRoleWithAction
+          role-session-name: GitHub_to_AWS_via_FederatedOIDC
+          aws-region: us-east-1
 
-    - name: Deploy to S3
-      run: |
-        aws s3 sync dist/ s3://${{ secrets.S3_BUCKET }} --delete
+      - name: Deploy to S3
+        run: |
+          aws s3 sync dist/ s3://${{ secrets.S3_BUCKET }} --delete
 
-    - name: Debug bucket name
-      run: echo "Bucket is: ${{ secrets.S3_BUCKET }}"
+      - name: Debug bucket name
+        run: echo "Bucket is: ${{ secrets.S3_BUCKET }}"
 
-  #------------ Invalidate CloudFront Cache at Edge Locations ------------#
-    - name: Invalidate CloudFront cache
-      if: ${{ secrets.CLOUDFRONT_DIST_ID != '' }}
-      run: |
-        aws cloudfront create-invalidation \
-          --distribution-id ${{ secrets.CLOUDFRONT_DIST_ID }} \
-          --paths "/*"
+    #------------ Invalidate CloudFront Cache at Edge Locations ------------#
+      - name: Invalidate CloudFront cache
+        if: ${{ secrets.CLOUDFRONT_DIST_ID != '' }}
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ secrets.CLOUDFRONT_DIST_ID }} \
+            --paths "/*"
