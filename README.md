@@ -1,7 +1,3 @@
-# portfolio-3.0
-
-Version 3.0 of ecoderP's personal portfolio website
-
 # 🚀 Portfolio CI/CD Pipeline (React + AWS + GitHub Actions)
 
 ## 📌 Overview
