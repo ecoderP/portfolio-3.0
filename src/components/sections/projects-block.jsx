@@ -36,7 +36,7 @@ const ProjectsBlock = ({
             style={{
               display: "block",
               marginTop: "1rem",
-              "text-decoration": "underline",
+              textDecoration: "underline",
             }}
           >
             <FiChevronsRight className="inline " />

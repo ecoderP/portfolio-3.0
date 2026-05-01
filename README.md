@@ -2,12 +2,21 @@
 
 ## 📌 Overview
 
-This project demonstrates a **production-style CI/CD pipeline** for a React (Vite) application, automatically deploying to:
+This project is a **production-style CI/CD pipeline** for my personal Portfolio Website. It is a React (Vite) application that automatically deploys to:
 
 - GitHub Pages
 - AWS S3 (served via CloudFront CDN)
 
 The pipeline ensures reliable, secure, and consistent deployments using modern DevOps practices.
+
+The live websites as at the time of writing this documentation can be viewed at:
+
+- GitHub deployed: https://paulbuchi.xyz
+- Amazon S3 deployed: https://d29cd1d5kxejhs.cloudfront.net/
+
+### Note
+
+This project is designed as an improvement on an earlier project on how to [Host a Static Website On Amazon S3 and Setup DNS With Amazon CloudFront](https://github.com/ecoderP/AWS-Projects/tree/main/Static%20website%20hosting%20on%20S3%20-%20Robust%20approach)
 
 ---
 
@@ -99,6 +108,7 @@ Build → Test → Artifact
 - ✅ Build once, deploy to multiple platforms
 - ✅ Automated testing before deployment
 - ✅ Secure AWS authentication (OIDC)
+- ✅ Serve through CDN via CloudFront
 - ✅ CDN cache invalidation
 - ✅ Artifact-based deployment consistency
 
@@ -125,4 +135,5 @@ Build → Test → Artifact
 ## 📬 Contact
 
 Feel free to connect or reach out if you’d like to discuss this project!
-https://paulbuchi.xyz
+
+- https://paulbuchi.xyz

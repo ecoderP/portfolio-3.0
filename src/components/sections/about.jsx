@@ -23,13 +23,7 @@ const About = () => {
             React, with an emphasis on scalability, performance, and
             maintainability.
           </p>
-          <p className=" ">
-            I’ve worked on projects that involve deploying applications to AWS,
-            setting up CI/CD pipelines, and optimizing delivery using services
-            like CloudFront. My approach is centered on building systems that
-            are not only functional but also efficient and reliable in
-            real-world use.
-          </p>
+
           <p className=" ">
             I’m continuously developing my skills in cloud architecture and
             software engineering, with a focus on designing and deploying
