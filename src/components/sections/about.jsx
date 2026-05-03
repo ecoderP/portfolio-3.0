@@ -31,7 +31,7 @@ const About = () => {
           </p>
           <p className=" ">
             Outside of tech, I enjoy spending time outdoors and exploring
-            science fiction and fantasy—interests that keep me curious and
+            science fiction and fantasy. These interests keep me curious and
             constantly thinking about new ideas and possibilities.
           </p>
           <p className=" ">
