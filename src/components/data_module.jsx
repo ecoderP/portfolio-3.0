@@ -9,7 +9,7 @@ import { FaCode } from "react-icons/fa";
 //Skills data
 
 // Import projects data
-import CICDImage from "../../src/img/CI-CDPipeline.webp";
+import CICDImage from "../../src/img/cicdproject/CI-CDPipeline.webp";
 
 // Articles data
 import AWSVPCImg from "../../src/img/AWSVirtualPrivateCloud.webp";

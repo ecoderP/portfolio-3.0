@@ -121,10 +121,10 @@ Build → Test → Artifact
 ---
 
 Live website on GitHub Pages with custom domain name
-![Live GitHub Pages Deployment](src/img/cicdproject/liveGitHubPages.png)
+![Live GitHub Pages Deployment](src/img/cicdproject/liveGitHubPages.webp)
 
 Live website on Amazon S3 served through CloudFront
-![Live S3 Deployment](src/img/cicdproject/liveS3Deploy.png)
+![Live S3 Deployment](src/img/cicdproject/liveS3Deployment.webp)
 
 ## ⚠️ Future Improvements
 
