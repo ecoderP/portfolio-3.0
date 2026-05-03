@@ -24,9 +24,9 @@ export const Skills = [
   {
     id: 2,
 
-    "skill-name": "API Development",
+    "skill-name": "Scripting & Configuration",
     icon: <FaCode />,
-    desc: "RESTful APIs, GraphQL",
+    desc: "Python, YAML HCL",
   },
   {
     id: 3,
