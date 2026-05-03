@@ -33,7 +33,7 @@ Build → Test → Artifact
    └── S3 → CloudFront (CDN)
 ```
 
-![Architecture diagram for Ci/CD Pipeline](src/img/CI-CD%20Pipeline%20for%20Portfolio3.webp)
+![Architecture diagram for Ci/CD Pipeline](src/img/CI-CDPipeline.webp)
 
 ---
 
