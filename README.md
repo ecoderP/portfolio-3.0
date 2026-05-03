@@ -33,7 +33,7 @@ Build → Test → Artifact
    └── S3 → CloudFront (CDN)
 ```
 
-![Architecture diagram for Ci/CD Pipeline](src/img/CI-CDPipeline.webp)
+![Architecture diagram for Ci/CD Pipeline](src/img/cicdproject/CI-CDPipeline.webp)
 
 ---
 
@@ -69,6 +69,8 @@ Build → Test → Artifact
 - Download artifact
 - Deploy using `actions/deploy-pages`
 
+![Pipeline Stages](src/img/cicdproject/githubActionsWorkflow.webp)
+
 ### AWS S3 + CloudFront
 
 - Authenticate via OIDC (no static credentials)
@@ -94,6 +96,8 @@ Build → Test → Artifact
 
 ---
 
+![Successful Deploys](src/img/cicdproject/githubDeployStatus.webp)
+
 ## 📦 Technologies Used
 
 - React (Vite)
@@ -115,6 +119,12 @@ Build → Test → Artifact
 - ✅ Artifact-based deployment consistency
 
 ---
+
+Live website on GitHub Pages with custom domain name
+![Live GitHub Pages Deployment](src/img/cicdproject/liveGitHubPages.png)
+
+Live website on Amazon S3 served through CloudFront
+![Live S3 Deployment](src/img/cicdproject/liveS3Deploy.png)
 
 ## ⚠️ Future Improvements
 
