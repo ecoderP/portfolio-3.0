@@ -22,16 +22,7 @@ This project is designed as an improvement on an earlier project on how to [Host
 
 ## 🏗️ Architecture
 
-```
-GitHub (main branch)
-        ↓
-GitHub Actions (CI/CD)
-        ↓
-Build → Test → Artifact
-        ↓
-   ├── GitHub Pages
-   └── S3 → CloudFront (CDN)
-```
+![Architecture diagram for Ci/CD Pipeline](src/img/CI-CD%20Pipeline%20for%20Portfolio3.webp)
 
 ---
 
