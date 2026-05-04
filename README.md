@@ -126,6 +126,12 @@ Live website on GitHub Pages with custom domain name
 Live website on Amazon S3 served through CloudFront
 ![Live S3 Deployment](src/img/cicdproject/liveS3Deployment.webp)
 
+## 📦 Technologies Used
+
+- OIDC role assumption for secure deployments
+- Improved cache invalidation workflow
+- Reduced deployment friction via automation
+
 ## ⚠️ Future Improvements
 
 - Add PR preview deployments

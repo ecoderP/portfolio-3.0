@@ -16,12 +16,12 @@ const About = () => {
       <div className="about-wrapper h-full w-full md:flex md:items-center md:justify-between flex-col md:flex-row">
         <div className="about-left w-full md:w-2/3">
           <p className="">
-            I’m an AWS Certified Cloud Practitioner focused on building
-            cloud-native web applications using services like AWS Lambda, API
-            Gateway, DynamoDB, and S3. I develop full-stack solutions by
-            combining these services with modern frontend frameworks such as
-            React, with an emphasis on scalability, performance, and
-            maintainability.
+            I am a Cloud Engineer with a background in Chemical Engineering and
+            9+ years of multidisciplinary experience across municipal water
+            systems and infrastructure, web development and strategic
+            stakeholder engagement. I develop cloud-based solutions by combining
+            AWS services with modern fronend frameworks such as React, with a
+            emphasis on scalability, performanace and maintanability.
           </p>
 
           <p className=" ">
@@ -36,8 +36,8 @@ const About = () => {
           </p>
           <p className=" ">
             I’m currently open to opportunities where I can contribute to
-            cloud-based systems and continue growing as a developer. Feel free
-            to reach out or connect with me.
+            cloud-based systems and continue growing in the cloud space. Feel
+            free to reach out or connect with me.
           </p>
           <div className="about-socials mt-[1rem] border-s-4 text-2xl">
             <p className="mx-[1rem] text-2xl my-[1rem] text-shadow-lg-50 text-[#292E49]">
