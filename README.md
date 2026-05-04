@@ -1,4 +1,4 @@
-# 🚀 Portfolio CI/CD Pipeline (React + AWS + GitHub Actions)
+# 🚀 Dual Platform CI/CD Deployment Pipeline - Cloud-Native Static Web Delivery Platform with Automated CI/CD (React + AWS + GitHub Actions)
 
 ## 📌 Overview
 
