@@ -51,6 +51,22 @@ export const Skills = [
 export const PortfolioProjects = [
   {
     id: 1,
+    title:
+      "Terraform-based CI/CD Pipeline for React Application with AWS Deployment",
+    img: CICDImage,
+    description:
+      "Reusable and self-bootstrapping infrastructure template deploying a React application to AWS S3 using Terraform with multi-environment (Dev, Staging, Prod) CI/CD pipeline implemented using GitHub Actions.",
+    technologies: [
+      "Terraform",
+      "AWS (S3, CloudFront, IAM: OIDC Authentication)",
+      "Github Actions",
+      "Frontend (React + Vite)",
+    ],
+    link: "https://github.com/ecoderP/portfolio-3.0",
+  },
+
+  {
+    id: 2,
     title: "CI/CD Pipeline for Dual Deployment (React + AWS + GitHub Actions)",
     img: CICDImage,
     description:

@@ -17,10 +17,10 @@ const About = () => {
         <div className="about-left w-full md:w-2/3">
           <p className="">
             I am a Cloud Engineer with a background in Chemical Engineering and
-            9+ years of multidisciplinary experience across municipal water
-            systems and infrastructure, web development and strategic
-            stakeholder engagement. I develop cloud-based solutions by combining
-            AWS services with modern fronend frameworks such as React, with a
+            multidisciplinary experience across municipal water systems and
+            infrastructure, web development and strategic stakeholder
+            engagement. I develop cloud-based solutions by combining AWS
+            services with modern fronend frameworks such as React, with a
             emphasis on scalability, performanace and maintanability.
           </p>
 
@@ -29,11 +29,7 @@ const About = () => {
             software engineering, with a focus on designing and deploying
             production-ready applications.
           </p>
-          <p className=" ">
-            Outside of tech, I enjoy spending time outdoors and exploring
-            science fiction and fantasy. These interests keep me curious and
-            constantly thinking about new ideas and possibilities.
-          </p>
+
           <p className=" ">
             I’m currently open to opportunities where I can contribute to
             cloud-based systems and continue growing in the cloud space. Feel
