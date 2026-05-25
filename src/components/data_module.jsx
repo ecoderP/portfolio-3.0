@@ -53,7 +53,7 @@ export const PortfolioProjects = [
     id: 1,
     title:
       "Terraform-based CI/CD Pipeline for React Application with AWS Deployment",
-    img: CICDImage,
+    img: "https://via.placeholder.com/300x200.png?text=Project+1",
     description:
       "Reusable and self-bootstrapping infrastructure template deploying a React application to AWS S3 using Terraform with multi-environment (Dev, Staging, Prod) CI/CD pipeline implemented using GitHub Actions.",
     technologies: [
@@ -62,7 +62,7 @@ export const PortfolioProjects = [
       "Github Actions",
       "Frontend (React + Vite)",
     ],
-    link: "https://github.com/ecoderP/portfolio-3.0",
+    link: "https://github.com/ecoderP/s3-static-app-terraform",
   },
 
   {
