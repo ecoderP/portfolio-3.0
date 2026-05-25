@@ -26,7 +26,7 @@ export const Skills = [
 
     "skill-name": "Scripting & Configuration",
     icon: <FaCode />,
-    desc: "Python, YAML HCL",
+    desc: "Python, YAML, HCL",
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ export const Skills = [
     id: 4,
     "skill-name": "CI/CD",
     icon: <IoGitCompareSharp />,
-    desc: "Git, Github Actions",
+    desc: "Github Actions",
   },
   {
     id: 5,

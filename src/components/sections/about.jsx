@@ -41,12 +41,6 @@ const About = () => {
               Let's Connect:
             </p>
             <a
-              href="https://x.com/paulemi?s=21"
-              className="inline-block mx-[1rem] px-[0.5rem] py-[0.25rem] bg-[#292E49] text-white rounded-full"
-            >
-              <FaXTwitter />
-            </a>
-            <a
               href="https://www.linkedin.com/in/paulonyebuchi"
               className="inline-block mr-[1rem] px-[0.5rem] py-[0.25rem] bg-[#292E49] text-white rounded-full"
             >
