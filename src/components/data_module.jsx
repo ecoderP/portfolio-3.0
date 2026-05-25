@@ -52,10 +52,10 @@ export const PortfolioProjects = [
   {
     id: 1,
     title:
-      "Terraform-based CI/CD Pipeline for React Application with AWS Deployment",
+      "TTerraform S3 Static App Project ( Reusable and Self-bootstrapping)",
     img: "https://via.placeholder.com/300x200.png?text=Project+1",
     description:
-      "Reusable and self-bootstrapping infrastructure template deploying a React application to AWS S3 using Terraform with multi-environment (Dev, Staging, Prod) CI/CD pipeline implemented using GitHub Actions.",
+      "Reusable and self-bootstrapping infrastructure template deploying a React application to AWS S3 using Terraform with multi-environment (Dev, Staging, Prod) CI/CD pipeline implemented using GitHub Actions. This project is designed as a drop-in frontend deployment foundation for any Vite + React application that needs scalable AWS hosting with automated deployments.",
     technologies: [
       "Terraform",
       "AWS (S3, CloudFront, IAM: OIDC Authentication)",
