@@ -51,8 +51,7 @@ export const Skills = [
 export const PortfolioProjects = [
   {
     id: 1,
-    title:
-      "TTerraform S3 Static App Project ( Reusable and Self-bootstrapping)",
+    title: "Terraform S3 Static App Project ( Reusable and Self-bootstrapping)",
     img: "https://via.placeholder.com/300x200.png?text=Project+1",
     description:
       "Reusable and self-bootstrapping infrastructure template deploying a React application to AWS S3 using Terraform with multi-environment (Dev, Staging, Prod) CI/CD pipeline implemented using GitHub Actions. This project is designed as a drop-in frontend deployment foundation for any Vite + React application that needs scalable AWS hosting with automated deployments.",
@@ -77,24 +76,6 @@ export const PortfolioProjects = [
       "Other Tools (Git, Github Actions, Vitest, Tailwind CSS )",
     ],
     link: "https://github.com/ecoderP/portfolio-3.0",
-  },
-  {
-    id: 3,
-    title: "AI Water Quality Advisor",
-    img: "https://via.placeholder.com/300x200.png?text=Project+2",
-    description:
-      "An AI powered web application that analyzes household water quality test results and provides safety assessments, possible issues and treatment recommendations based on international water quality guidelines (WHO/EPA).",
-    technologies: [
-      "AWS Amplify",
-      "AWS Lambda",
-      "API Gateway",
-      "AWS DynamoDB",
-      "AWS Bedrock",
-      "React JS",
-      "Cognito",
-      "GitHub",
-    ],
-    link: "https://github.com/ecoderP/ai-water-quality-advisor",
   },
 ];
 
