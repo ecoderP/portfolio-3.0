@@ -16,24 +16,12 @@ const About = () => {
       <div className="about-wrapper h-full w-full md:flex md:items-center md:justify-between flex-col md:flex-row">
         <div className="about-left w-full md:w-2/3">
           <p className="">
-            I am a Cloud Engineer with a background in Chemical Engineering and
-            multidisciplinary experience across municipal water systems and
-            infrastructure, web development and strategic stakeholder
-            engagement. I develop cloud-based solutions by combining AWS
-            services with modern fronend frameworks such as React, with a
-            emphasis on scalability, performanace and maintanability.
-          </p>
-
-          <p className=" ">
-            I’m continuously developing my skills in cloud architecture and
-            software engineering, with a focus on designing and deploying
-            production-ready applications.
-          </p>
-
-          <p className=" ">
-            I’m currently open to opportunities where I can contribute to
-            cloud-based systems and continue growing in the cloud space. Feel
-            free to reach out or connect with me.
+            I am a Software / Cloud Engineer with 5+ years experience building
+            WordPress websites for real customers. Most recently I've been deep
+            in React, JavaScript, and AWS Cloud — but I started my career in
+            Chemical Engineering. That foundational infrastructure experience
+            still shapes how I build. I write code assuming someone else (often
+            future-me) has to read, run, and debug it at 2am.
           </p>
           <div className="about-socials mt-[1rem] border-s-4 text-2xl">
             <p className="mx-[1rem] text-2xl my-[1rem] text-shadow-lg-50 text-[#292E49]">
@@ -42,7 +30,7 @@ const About = () => {
             </p>
             <a
               href="https://www.linkedin.com/in/paulonyebuchi"
-              className="inline-block mr-[1rem] px-[0.5rem] py-[0.25rem] bg-[#292E49] text-white rounded-full"
+              className="inline-block mx-[1rem] px-[0.5rem] py-[0.25rem] bg-[#292E49] text-white rounded-full"
             >
               <FaLinkedinIn />
             </a>
