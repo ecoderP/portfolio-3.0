@@ -4,7 +4,7 @@ const SectionBlock = ({ children, style, id }) => {
   return (
     <section
       style={style}
-      className="section-block h-full w-full my-[5rem] px-[2rem] md:my-[10rem]"
+      className="section-block h-full w-full my-[5rem] px-[5rem] md:my-[10rem]"
       id={id}
     >
       {children}
